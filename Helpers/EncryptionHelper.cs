@@ -30,8 +30,6 @@ namespace PoCSteganography.Helpers
                                 byte[] cipherTextBytes = saltStringBytes;
                                 cipherTextBytes = cipherTextBytes.Concat(ivStringBytes).ToArray();
                                 cipherTextBytes = cipherTextBytes.Concat(memoryStream.ToArray()).ToArray();
-                                memoryStream.Close();
-                                cryptoStream.Close();
 
                                 return Convert.ToBase64String(cipherTextBytes);
                             }
