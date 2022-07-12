@@ -37,7 +37,7 @@ namespace PoCSteganography
                             Console.WriteLine("Your output image file is: hidden.png");
                         }
                         else
-                            Console.WriteLine("Espacio insuficente para almacenar el texto. Se requiere una imagen de mayores dimensiones");
+                            Console.WriteLine("Insufficient pixels to hide text. Larger image size required.");
                     }
                 }
             }
